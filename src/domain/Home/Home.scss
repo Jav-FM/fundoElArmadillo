@@ -1,0 +1,46 @@
+#home {
+  padding-top: 60px;
+  #background-video {
+    width: 100vw;
+    height: 850px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #title {
+    margin-top: 150px;
+    font-size: 70px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #202020;
+    line-height: 60px;
+  }
+  #subtitle {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #202020;
+  }
+  .homeButton {
+    width: 200px;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  #homeCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 150px;
+    gap: 20px;
+    padding: 0;
+  }
+  .homeCard {
+    width: 400px;
+    min-height: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #202020;
+  }
+}

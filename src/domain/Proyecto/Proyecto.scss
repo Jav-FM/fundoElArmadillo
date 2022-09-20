@@ -1,0 +1,19 @@
+#proyecto {
+  margin-top: 60px;
+  #title {
+    margin-bottom: 20px;
+  }
+  #contentContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  #imagenProyecto {
+    aspect-ratio: 1 / 1;
+    width: 42%;
+    border-radius: 999px;
+    margin-right: 5%;
+  }
+}
