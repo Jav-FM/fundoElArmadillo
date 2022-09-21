@@ -3,6 +3,10 @@ import { Button } from "react-bootstrap";
 import "./Home.scss";
 import { Proyecto } from "../Proyecto";
 import { Caracteristicas } from "../Caracteristicas";
+import { TourVirtual } from "../TourVirtual";
+import { Sector } from "../Sector";
+import { Galeria } from "../Galeria";
+import { Contacto } from "../Contacto";
 import homeVideo from "../../assets/video/juanovideo.mp4";
 
 const Home = () => {
@@ -18,10 +22,10 @@ const Home = () => {
           El Armadillo
         </h1>
         <h4 id="subtitle">Tesoro de la Patagonia</h4>
-        <Button className="homeButton" variant="outline-light" size="lg">
+        <Button className="homeButton" variant="outline-light" size="lg" href="#caracteristicas">
           Más información
         </Button>
-        <Button className="homeButton" variant="dark" size="lg">
+        <Button className="homeButton" variant="dark" size="lg" href="#contacto">
           Contáctanos
         </Button>
         <div id="homeCardsContainer" className="container">
@@ -54,8 +58,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-    <Proyecto />
-    <Caracteristicas />
+      <Proyecto />
+      <Caracteristicas />
+      <TourVirtual />
+      <Sector />
+      <Galeria />
+      <Contacto />
     </React.Fragment>
   );
 };

@@ -1,6 +1,7 @@
 import "../App.scss";
 import { Routes, Route } from "react-router-dom";
 import { CustomNavbar } from "../utils/elements/CustomNavbar";
+import { CustomFooter } from "../utils/elements/CustomFooter";
 import { Home } from "../domain/Home";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
+      <CustomFooter />
     </div>
   );
 };

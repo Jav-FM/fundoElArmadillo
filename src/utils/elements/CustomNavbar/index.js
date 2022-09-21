@@ -14,30 +14,18 @@ const CustomNavbar = () => {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand href="#home">
-          Marca
-        </Navbar.Brand>
+        <Navbar.Brand href="#home">Marca</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
           <Nav className="me-auto">
-            <Nav.Link href="#proyecto">
-              Proyecto
-            </Nav.Link>
-            <Nav.Link href="#caracteristicas">
-              Características
-            </Nav.Link>
-            <Nav.Link>
-              Tour Virtual
-            </Nav.Link>
-            <Nav.Link>
-              La Patagonia
-            </Nav.Link>
-            <Nav.Link>
-              Contacto
-            </Nav.Link>
+            <Nav.Link href="#proyecto">Proyecto</Nav.Link>
+            <Nav.Link href="#caracteristicas">Características</Nav.Link>
+            <Nav.Link href="#tourVirtual">Tour Virtual</Nav.Link>
+            <Nav.Link href="#sector">La Patagonia</Nav.Link>
+            <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>
 
           <Nav>
