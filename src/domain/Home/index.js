@@ -2,63 +2,97 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./Home.scss";
 import { Proyecto } from "../Proyecto";
+import { Video } from "../Video";
 import { Caracteristicas } from "../Caracteristicas";
 import { TourVirtual } from "../TourVirtual";
 import { Sector } from "../Sector";
 import { Galeria } from "../Galeria";
 import { Contacto } from "../Contacto";
-import homeVideo from "../../assets/video/juanovideo.mp4";
+import homeVideo from "../../assets/video/video1.MOV";
+import videoPoster from "../../assets/img/video-poster-img.jpg";
 
 const Home = () => {
   return (
     <React.Fragment>
       <div id="home" className="container">
-        <video id="background-video" autoPlay loop muted>
+        <video id="background-video" autoPlay loop muted poster={videoPoster}>
           <source src={homeVideo} />
         </video>
         <h1 id="title">
-          <span style={{ fontSize: 100 }}>Fundo</span>
+          <span id="preTitle">Fundo</span>
           <br />
-          El Armadillo
+          Armadillo
         </h1>
         <h4 id="subtitle">Tesoro de la Patagonia</h4>
-        <Button className="homeButton" variant="outline-light" size="lg" href="#caracteristicas">
+        <Button
+          className="homeButton"
+          variant="outline-light"
+          size="lg"
+          href="#caracteristicas"
+        >
           Más información
         </Button>
-        <Button className="homeButton" variant="dark" size="lg" href="#contacto">
+        <Button
+          className="homeButton"
+          variant="dark"
+          size="lg"
+          href="#contacto"
+        >
           Contáctanos
         </Button>
         <div id="homeCardsContainer" className="container">
           <div className="homeCard">
-            <h3>Lorem</h3>
+            <h3>Parcelas Agrícolas de 5000 m2</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo necessitatibus perferendis expedita enim, ut dicta unde
-              temporibus ducimus dignissimos! Animi possimus nulla voluptatibus
-              doloremque velit magni minus consectetur cumque distinctio.
+              Proyecto El Armadillo es un proyecto ubicado en la Patagonia
+              Chilena, rodeado de los sectores más bellos del sur de chile, el
+              cual buscará preservar todo el sentido natural para que tú y tu
+              familia puedan disfrutar de nuestra tierra.
             </p>
           </div>
           <div className="homeCard">
-            <h3>Lorem</h3>
+            <h3>Cerca de Todo</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo necessitatibus perferendis expedita enim, ut dicta unde
-              temporibus ducimus dignissimos! Animi possimus nulla voluptatibus
-              doloremque velit magni minus consectetur cumque distinctio.
+              Gracias a su cercanía con el aeropuerto y el centro de la ciudad,
+              encontrarás lo que necesites a sólo minutos. Podrás obtener el
+              lugar que buscas para conectarte con la tierra en un hermoso
+              entorno patagón, a minutos de las principales zonas de pesca y la
+              famosa ruta de la carretera austral.
             </p>
           </div>
           <div className="homeCard">
-            <h3>Lorem</h3>
+            <h3>Contamos con Financiamiento</h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo necessitatibus perferendis expedita enim, ut dicta unde
-              temporibus ducimus dignissimos! Animi possimus nulla voluptatibus
-              doloremque velit magni minus consectetur cumque distinctio.
+              Excelente oportunidad de inversión, contamos con financiamiento
+              propio previa evaluación , contáctanos para más información.
             </p>
           </div>
         </div>
+        <div id="homeGeneralCard">
+          <h3>Parcelas Agrícolas de 5000 m2</h3>
+          <p>
+            Proyecto El Armadillo es un proyecto ubicado en la Patagonia
+            Chilena, rodeado de los sectores mas bellos del sur de chile, el
+            cual buscará preservar todo el sentido natural para que tu y tu
+            familia puedan disfrutar de nuestra tierra.
+          </p>
+          <h3 className="generalTitle">Cerca de Todo</h3>
+          <p>
+            Gracias a su cercanía con el aeropuerto y al centro de la ciudad,
+            encontrarás lo que necesitas a sólo minutos. Podrás obtener el lugar
+            que buscas para conectarte con la tierra en un hermoso entorno
+            patagón, a minutos de las principales zonas de pesca y la famosa
+            ruta de la carretera austral.
+          </p>
+          <h3 className="generalTitle">Contamos con Financiamiento</h3>
+          <p>
+            Excelente oportunidad de inversión, contamos con financiamiento
+            propio previa evaluación , contáctanos para más información.
+          </p>
+        </div>
       </div>
       <Proyecto />
+      <Video />
       <Caracteristicas />
       <TourVirtual />
       <Sector />

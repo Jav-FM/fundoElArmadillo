@@ -3,6 +3,7 @@ import "./CustomNavbar.scss";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import logo from "../../../assets/img/logo_blanco.png";
 
 const CustomNavbar = () => {
   return (
@@ -14,21 +15,24 @@ const CustomNavbar = () => {
       variant="dark"
     >
       <Container>
-        <Navbar.Brand href="#home">Marca</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img id="logo" src={logo} alt="logo" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse
           id="responsive-navbar-nav"
           className="justify-content-end"
         >
-          <Nav className="me-auto">
+          <Nav className="linksContainer me-auto">
             <Nav.Link href="#proyecto">Proyecto</Nav.Link>
+            <Nav.Link href="#video">Video</Nav.Link>
             <Nav.Link href="#caracteristicas">Características</Nav.Link>
             <Nav.Link href="#tourVirtual">Tour Virtual</Nav.Link>
             <Nav.Link href="#sector">La Patagonia</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>
 
-          <Nav>
+          {/* <Nav>
             <Nav.Link as={Link} to="/register">
               <h3>
                 <AiFillInstagram />
@@ -39,7 +43,7 @@ const CustomNavbar = () => {
                 <AiFillFacebook />
               </h3>
             </Nav.Link>
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>
