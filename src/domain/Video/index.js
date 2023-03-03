@@ -1,6 +1,6 @@
 import React from "react";
 import "./Video.scss";
-import promotionalVideo from "../../assets/video/video_promocional.mp4";
+import promotionalVideo from "../../assets/video/video-promocional-armadillo.mp4";
 
 const Video = () => {
   //   const promotionalVideo =
