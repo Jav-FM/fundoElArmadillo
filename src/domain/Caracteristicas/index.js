@@ -6,12 +6,13 @@ import mapImage from "../../assets/img/mapa.JPG";
 
 const Caracteristicas = () => {
   const features = [
-    { text: "Rol propio" },
+    { text: "Listas para escriturar" },
     { text: "Parcelas desde 5000 m2" },
-    { text: "Autorizadas acorde a normativa legal" },
-    { text: "Fácil Acceso" },
-    { text: "Parcelas con orilla de camino" },
-    { text: "Terrenos con vistas privilegiadas" },
+    {
+      text: "Acceso privado a área de recreación con 450m de orilla del río Simpson.",
+    },
+    { text: "Acceso en cualquier tipo de vehículo" },
+    { text: "Parcelas con orilla de camino y vistas privilegiadas" },
     { text: "Topografía plana y semiplana" },
     { text: "Factibilidad real de Agua y Electricidad (poste)" },
     { text: "Ubicado a 30 minutos del aeropuerto de Balmaceda. " },
@@ -21,7 +22,6 @@ const Caracteristicas = () => {
     {
       text: "Zona de Internacional de Pesca: Lago Elizalde, La Paloma, Lago  Caro",
     },
-    { text: "A 3 minutos del río Simpson" },
     { text: "Carretera Austral" },
   ];
 

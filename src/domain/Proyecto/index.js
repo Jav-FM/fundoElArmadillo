@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Button, Modal } from "react-bootstrap";
 import "./Proyecto.scss";
-import proyectImage from "../../assets/img/proyecto-image.jpeg";
+import proyectImage from "../../assets/img/imgsGaleria/rio(2).jpg";
 // import promotionalVideo from "../../assets/video/video_promocional.mp4";
 
 const Proyecto = () => {
@@ -32,16 +32,16 @@ const Proyecto = () => {
         <div id="textContainer">
           <h2 id="title">Sobre el proyecto</h2>
           <h5>
-            Proyecto Fundo Armadillo es un proyecto con 70 parcelas ubicadas a
-            orillas del río Simpson, en el valle del mismo nombre, a solo 30
-            minutos del aeropuerto y 25 del centro de la ciudad de Coyhaique.
+            Fundo Armadillo es un proyecto de 70 parcelas ubicadas en el Valle
+            Simpson, el cual contará con acceso privado al terreno colindante de
+            17 hectáreas, que incluye Bosque Nativo y 450 metros de orilla del
+            Río Simpson para pesca y otras actividades al aire libre.
+            <br /> <br />
+            El terreno se encuentra a solo 30 minutos del aeropuerto y a 25 del
+            centro de la ciudad de Coyhaique.
             <br /> <br />
             Cuenta con parcelas planas, y con vista al valle las cuales te
             permiten apreciar toda la vista de la maravillosa patagonia.
-            <br /> <br />
-            Se encuentra a minutos de los principales lagos de pesca de la zona,
-            los cuales son visitados año a año por turistas nacionales e
-            internacionales que recorren la maravillosa carretera austral.
           </h5>
           {/* <Button
             id="videoButton"

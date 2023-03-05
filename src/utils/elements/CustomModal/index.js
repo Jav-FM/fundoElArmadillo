@@ -28,9 +28,9 @@ const CustomModal = ({ show, setShow, goToContact }) => {
           <img id="modalLogo" src={logo} alt="logo" />
           <h2 id="modalTitle">Exito de Ventas</h2>
           <div id="modalMiddleContent">
-            <p>¡Últimas unidades a precio de Preventa!</p>
+            <p>Ultimas unidades a precio de Preventa.</p>
             <p>Visita y elige tu parcela en el Tour Virtual.</p>
-            <p id="slogan">Vive y disfruta la Patagonia.</p>
+            <p id="slogan">¡Acceso privado a río Simpson!</p>
           </div>
 
           <div id="modalBottomContent">

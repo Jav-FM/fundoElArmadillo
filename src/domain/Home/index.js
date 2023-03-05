@@ -26,7 +26,7 @@ const Home = () => {
           <br />
           Armadillo
         </h1>
-        <h4 id="subtitle">Tesoro de la Patagonia</h4>
+        <h4 id="subtitle">Con acceso a orilla de río Simpson</h4>
         <Button
           className="homeButton"
           variant="outline-light"
@@ -64,10 +64,11 @@ const Home = () => {
             </p>
           </div>
           <div className="homeCard">
-            <h3>Contamos con Financiamiento</h3>
+            <h3>Acceso privado a Río Simpson</h3>
             <p>
-              Excelente oportunidad de inversión, contamos con financiamiento
-              propio previa evaluación , contáctanos para más información.
+              El proyecto contará con acceso privado al terreno colindante de 17
+              hectareas, el cual incluye Bosque Nativo y 450 metros de orilla
+              del Río Simpson para actividades al aire libre.
             </p>
           </div>
         </div>
@@ -87,10 +88,11 @@ const Home = () => {
             patagón, a minutos de las principales zonas de pesca y la famosa
             ruta de la carretera austral.
           </p>
-          <h3 className="generalTitle">Contamos con Financiamiento</h3>
+          <h3 className="generalTitle">Acceso privado a Río Simpson</h3>
           <p>
-            Excelente oportunidad de inversión, contamos con financiamiento
-            propio previa evaluación , contáctanos para más información.
+            El proyecto contará con acceso privado al terreno colindante de 17
+            hectareas, el cual incluye Bosque Nativo y 450 metros de orilla del
+            Río Simpson para actividades al aire libre.
           </p>
         </div>
       </div>

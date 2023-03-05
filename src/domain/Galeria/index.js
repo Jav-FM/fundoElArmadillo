@@ -1,29 +1,32 @@
 import React, { useState } from "react";
 import "./Galeria.scss";
-import image1 from "../../assets/img/imgsGaleria/DJI_0666.JPG";
-import image2 from "../../assets/img/imgsGaleria/DJI_0680.JPG";
-import image3 from "../../assets/img/imgsGaleria/DJI_0678.JPG";
-import image4 from "../../assets/img/imgsGaleria/DJI_0694.JPG";
-import image5 from "../../assets/img/imgsGaleria/DJI_0718.JPG";
-import image6 from "../../assets/img/imgsGaleria/DJI_0719.JPG";
-import image7 from "../../assets/img/imgsGaleria/DJI_0722.JPG";
-import image8 from "../../assets/img/imgsGaleria/DJI_0724.JPG";
-import image9 from "../../assets/img/imgsGaleria/DJI_0731.JPG";
-import image10 from "../../assets/img/imgsGaleria/DJI_0744.JPG";
+
+import image1 from "../../assets/img/imgsGaleria/rio(2).jpg";
+import image2 from "../../assets/img/imgsGaleria/20221207_162708.jpg";
+import image3 from "../../assets/img/imgsGaleria/rio.jpg";
+import image4 from "../../assets/img/imgsGaleria/rio(1).jpg";
+import image5 from "../../assets/img/imgsGaleria/rio4.jpg";
+import image6 from "../../assets/img/imgsGaleria/rio3.jpg";
+import image7 from "../../assets/img/imgsGaleria/DJI_0680.JPG";
+import image8 from "../../assets/img/imgsGaleria/DJI_0678.JPG";
+import image9 from "../../assets/img/imgsGaleria/DJI_0719.JPG";
+import image10 from "../../assets/img/imgsGaleria/DJI_0722.JPG";
 import image11 from "../../assets/img/imgsGaleria/DJI_0750.JPG";
 import image12 from "../../assets/img/imgsGaleria/DJI_0713.JPG";
-import image1mini from "../../assets/img/minisGaleria/DJI_0666mini.jpg";
-import image2mini from "../../assets/img/minisGaleria/DJI_0680mini.jpg";
-import image3mini from "../../assets/img/minisGaleria/DJI_0678mini.jpg";
-import image4mini from "../../assets/img/minisGaleria/DJI_0694mini.jpg";
-import image5mini from "../../assets/img/minisGaleria/DJI_0718mini.jpg";
-import image6mini from "../../assets/img/minisGaleria/DJI_0719mini.jpg";
-import image7mini from "../../assets/img/minisGaleria/DJI_0722mini.jpg";
-import image8mini from "../../assets/img/minisGaleria/DJI_0724mini.jpg";
-import image9mini from "../../assets/img/minisGaleria/DJI_0731mini.jpg";
-import image10mini from "../../assets/img/minisGaleria/DJI_0744mini.jpg";
+
+import image1mini from "../../assets/img/minisGaleria/rio(2).jpg";
+import image2mini from "../../assets/img/minisGaleria/20221207_162708.jpg";
+import image3mini from "../../assets/img/minisGaleria/rio.jpg";
+import image4mini from "../../assets/img/minisGaleria/rio(1).jpg";
+import image5mini from "../../assets/img/minisGaleria/rio4.jpg";
+import image6mini from "../../assets/img/minisGaleria/rio3.jpg";
+import image7mini from "../../assets/img/minisGaleria/DJI_0680mini.jpg";
+import image8mini from "../../assets/img/minisGaleria/DJI_0678mini.jpg";
+import image9mini from "../../assets/img/minisGaleria/DJI_0719mini.jpg";
+import image10mini from "../../assets/img/minisGaleria/DJI_0722mini.jpg";
 import image11mini from "../../assets/img/minisGaleria/DJI_0750mini.jpg";
 import image12mini from "../../assets/img/minisGaleria/DJI_0713mini.jpg";
+
 import { ModalGaleria } from "./ModalGaleria";
 
 const Galeria = () => {

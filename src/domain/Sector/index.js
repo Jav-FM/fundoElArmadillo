@@ -49,12 +49,13 @@ const Sector = () => {
           <img className="itemImage" src={img3} alt="itemImage3" />
         </div>
         <div className="textContainer">
-          <h4>Sectores de Pesca</h4>
+          <h4>Zona de Pesca</h4>
           <p>
-            La zona cuenta con muchos lagos, entre los que destacan lago:
-            la Paloma, Azul, Elizalde y Caro, los cuales presentan pesca con
-            mosca, de orilla o arrastre y que son visitadas por muchos turistas
-            que viajan de diversas partes del mundo a pescar
+            El proyecto cuenta con 450 metros de orilla de río Simpson para
+            pesca. Además, la zona tiene muchos lagos, entre los que destacan
+            lago: la Paloma, Azul, Elizalde y Caro, para pesca con mosca, de
+            orilla o arrastre, y que son visitadas por muchos turistas que
+            viajan de diversas partes del mundo.
           </p>
         </div>
       </div>
