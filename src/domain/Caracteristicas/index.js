@@ -9,7 +9,7 @@ const Caracteristicas = () => {
     { text: "Listas para escriturar" },
     { text: "Parcelas desde 5000 m2" },
     {
-      text: "Acceso privado a área de recreación con 450m de orilla del río Simpson.",
+      text: "Acceso a 450m de rivera del río Simpson.",
     },
     { text: "Acceso en cualquier tipo de vehículo" },
     { text: "Parcelas con orilla de camino y vistas privilegiadas" },

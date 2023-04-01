@@ -64,10 +64,10 @@ const Home = () => {
             </p>
           </div>
           <div className="homeCard">
-            <h3>Acceso privado a Río Simpson</h3>
+            <h3>Acceso a rivera de Río Simpson</h3>
             <p>
-              El proyecto contará con acceso privado al terreno colindante de 17
-              hectareas, el cual incluye Bosque Nativo y 450 metros de orilla
+              El proyecto contará con acceso al terreno colindante de 17
+              hectareas, el cual incluye Bosque Nativo y 450 metros de rivera
               del Río Simpson para actividades al aire libre.
             </p>
           </div>
@@ -88,10 +88,10 @@ const Home = () => {
             patagón, a minutos de las principales zonas de pesca y la famosa
             ruta de la carretera austral.
           </p>
-          <h3 className="generalTitle">Acceso privado a Río Simpson</h3>
+          <h3 className="generalTitle">Acceso a rivera a Río Simpson</h3>
           <p>
-            El proyecto contará con acceso privado al terreno colindante de 17
-            hectareas, el cual incluye Bosque Nativo y 450 metros de orilla del
+            El proyecto contará con acceso al terreno colindante de 17
+            hectareas, el cual incluye Bosque Nativo y 450 metros de rivera del
             Río Simpson para actividades al aire libre.
           </p>
         </div>

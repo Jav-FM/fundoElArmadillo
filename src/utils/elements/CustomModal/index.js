@@ -1,13 +1,15 @@
 import React from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "./CustomModal.scss";
-import logo from "../../../assets/img/logo_blanco.png";
+import { Body, Footer } from "./Plantillas/Pascua";
 
-const CustomModal = ({ show, setShow, goToContact }) => {
+const CustomModal = ({ show, setShow }) => {
+  //Para cerrar modal:
   const handleClose = () => {
     setShow(false);
   };
 
+  //Para ir a contacto:
   const handleWantAReservation = () => {
     window.location.href = "#contacto";
     handleClose();
@@ -22,33 +24,14 @@ const CustomModal = ({ show, setShow, goToContact }) => {
       size="md"
     >
       <Modal.Header id="modalHeader" closeButton closeLabel="Cerrar" />
-
       <Modal.Body>
-        <div id="modalBody">
-          <img id="modalLogo" src={logo} alt="logo" />
-          <h2 id="modalTitle">Exito de Ventas</h2>
-          <div id="modalMiddleContent">
-            <p>Ultimas unidades a precio de Preventa.</p>
-            <p>Visita y elige tu parcela en el Tour Virtual.</p>
-            <p id="slogan">¡Acceso privado a río Simpson!</p>
-          </div>
-
-          <div id="modalBottomContent">
-            <p>* Consulta promociones al contado.</p>
-          </div>
-        </div>
+        <Body />
       </Modal.Body>
       <Modal.Footer id="modalFooter">
-        <Button
-          size="lg"
-          variant="outline-dark mx-2"
-          onClick={handleWantAReservation}
-        >
-          Quiero más información
-        </Button>
-        <Button size="lg" variant="dark mx-2" onClick={handleClose}>
-          Cerrar
-        </Button>
+        <Footer
+          handleClose={handleClose}
+          handleWantAReservation={handleWantAReservation}
+        />
       </Modal.Footer>
     </Modal>
   );
