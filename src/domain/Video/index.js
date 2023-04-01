@@ -1,6 +1,5 @@
 import React from "react";
 import "./Video.scss";
-import promotionalVideo from "../../assets/video/video-promocional-armadillo.mp4";
 
 const Video = () => {
   //   const promotionalVideo =
@@ -10,10 +9,18 @@ const Video = () => {
     <section id="video" className="container">
       <div id="contentContainer">
         <h2 id="title">Video</h2>
-        <video width="100%" height="auto" controls>
+        {/* <video width="100%" height="auto" controls>
           <source src={promotionalVideo} type="video/mp4" />
           Tu navegador no soporta los vídeos de HTML5
-        </video>
+        </video> */}
+        <iframe
+          width="100%"
+          height="650px"
+          src="https://www.youtube.com/embed/s7z_AlI4Xhk"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </section>
   );
