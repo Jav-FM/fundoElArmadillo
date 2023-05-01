@@ -1,8 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Button, Form, Image, Alert, Spinner } from "react-bootstrap";
 import "./Contacto.scss";
-import imagenContacto from "../../assets/img/imagen-contacto.jpg";
+import imagenContacto from "../../../assets/img/imagen-contacto.jpg";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 // const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
 // const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
 
@@ -15,6 +16,7 @@ const Contacto = () => {
   const [onCharge, setOnCharge] = useState(false);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
 
   const resetInputs = () => {
     setName("");
@@ -41,12 +43,14 @@ const Contacto = () => {
         .then(
           (result) => {
             setOnCharge(false);
-            setSuccess(true);
-            setTimeout(() => {
-              setSuccess(false);
-            }, 5000);
+            navigate("/gracias");
+            // setSuccess(true);
+            // setTimeout(() => {
+            //   setSuccess(false);
+            // }, 5000);
           },
           (error) => {
+            console.log(error);
             setOnCharge(false);
             setError(true);
             setTimeout(() => {

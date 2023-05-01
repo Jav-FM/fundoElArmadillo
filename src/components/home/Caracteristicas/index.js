@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Image } from "react-bootstrap";
 import "./Caracteristicas.scss";
 import { BsFillTreeFill } from "react-icons/bs";
-import mapImage from "../../assets/img/mapa.JPG";
+import mapImage from "../../../assets/img/mapa.JPG";
 
 const Caracteristicas = () => {
   const features = [

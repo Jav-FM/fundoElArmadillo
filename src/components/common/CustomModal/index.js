@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal } from "react-bootstrap";
 import "./CustomModal.scss";
-import { Body, Footer } from "./Plantillas/Pascua";
+import { Body, Footer } from "./Plantillas/UltimasPreventas";
 
 const CustomModal = ({ show, setShow }) => {
   //Para cerrar modal:

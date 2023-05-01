@@ -1,10 +1,10 @@
 import React from "react";
 import "./Sector.scss";
-import img1 from "../../assets/img/imgsSector/parque-nacional.jpg";
-import img2 from "../../assets/img/imgsSector/carretera-austral.jpg";
-import img3 from "../../assets/img/imgsSector/lagos-pesca.jpg";
-import img4 from "../../assets/img/imgsSector/gastronomia.jpg";
-import img5 from "../../assets/img/imgsSector/cercania.jpg";
+import img1 from "../../../assets/img/imgsSector/parque-nacional.jpg";
+import img2 from "../../../assets/img/imgsSector/carretera-austral.jpg";
+import img3 from "../../../assets/img/imgsSector/lagos-pesca.jpg";
+import img4 from "../../../assets/img/imgsSector/gastronomia.jpg";
+import img5 from "../../../assets/img/imgsSector/cercania.jpg";
 
 const Sector = () => {
   return (

@@ -1,19 +1,28 @@
 import "../App.scss";
 import { Routes, Route } from "react-router-dom";
-import { CustomNavbar } from "../utils/elements/CustomNavbar";
-import { CustomFooter } from "../utils/elements/CustomFooter";
+import { CustomNavbar } from "../components/common/CustomNavbar";
+import { CustomFooter } from "../components/common/CustomFooter";
 import { Home } from "../domain/Home";
+import MuchasGracias from "../domain/MuchasGracias";
 
 const App = () => {
   return (
     <div className="App">
-      <CustomNavbar />
-      <div id="main">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </div>
-      <CustomFooter />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <CustomNavbar />
+              <div id="main">
+                <Home />
+              </div>
+              <CustomFooter />
+            </>
+          }
+        />
+        <Route path="/gracias" element={<MuchasGracias />} />
+      </Routes>
     </div>
   );
 };

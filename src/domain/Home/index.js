@@ -1,32 +1,33 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 import "./Home.scss";
-import { Proyecto } from "../Proyecto";
-import { Video } from "../Video";
-import { Caracteristicas } from "../Caracteristicas";
-import { TourVirtual } from "../TourVirtual";
-import { Sector } from "../Sector";
-import { Galeria } from "../Galeria";
-import { Contacto } from "../Contacto";
+import { Proyecto } from "../../components/home/Proyecto";
+import { Video } from "../../components/home/Video";
+import { Caracteristicas } from "../../components/home/Caracteristicas";
+import { TourVirtual } from "../../components/home/TourVirtual";
+import { Sector } from "../../components/home/Sector";
+import { Galeria } from "../../components/home/Galeria";
+import { Contacto } from "../../components/home/Contacto";
 import homeVideo from "../../assets/video/header-armadillo.MOV";
 import videoPoster from "../../assets/img/video-poster-img.jpg";
-import { CustomModal } from "../../utils/elements/CustomModal";
+import { CustomModal } from "../../components/common/CustomModal";
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(true);
+  // const [showModal, setShowModal] = useState(true);
   return (
     <React.Fragment>
-      <CustomModal show={showModal} setShow={setShowModal} />
+      {/* <CustomModal show={showModal} setShow={setShowModal} /> */}
       <div id="home" className="container">
         <video id="background-video" autoPlay loop muted poster={videoPoster}>
           <source src={homeVideo} />
         </video>
         <h1 id="title">
-          <span id="preTitle">Fundo</span>
-          <br />
+          {/* <span id="preTitle">*/}
+          Fundo {/* </span> */}
           Armadillo
         </h1>
         <h4 id="subtitle">Con acceso a orilla de río Simpson</h4>
+        <h4 id="subsubtitle">20% de descuento para unidades limitadas</h4>
         <Button
           className="homeButton"
           variant="outline-light"
