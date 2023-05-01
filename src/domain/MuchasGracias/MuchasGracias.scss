@@ -1,9 +1,12 @@
 #muchasGracias {
-  background-image: url("../../assets/img/video-poster-img.jpg");
+  background-image: url("../../assets/img/imagen-poster.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   #contentContainer {
-    background-color: white;
+    background-color: #ffffffd9;
     margin-top: 150px;
     padding: 20px;
   }
