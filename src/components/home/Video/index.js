@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Video.scss";
+import axios from "axios";
+import { youtubeInfo } from "../../../utils/externalVariables";
+import YoutubeCarousel from "./YoutubeCarousel";
 
 const Video = () => {
-  //   const promotionalVideo =
-  //     "https://player.vimeo.com/video/765422384?h=35c046b135&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+  const youtubeChanelLastVideosApi = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCblZWHYK0f9c2EmUxZ2mJfg&maxResults=24&order=date&type=video&key=${youtubeInfo}`;
+  const [videoList, setVideoList] = useState([]);
+
+  const getPlaylistVideos = async () => {
+    const videoListResponse = await axios.get(youtubeChanelLastVideosApi);
+    setVideoList(videoListResponse.data.items);
+  };
+
+  useEffect(() => {
+    getPlaylistVideos();
+  }, []);
 
   return (
     <section id="video" className="container">
       <div id="contentContainer">
         <h2 id="title">Video</h2>
-        {/* <video width="100%" height="auto" controls>
-          <source src={promotionalVideo} type="video/mp4" />
-          Tu navegador no soporta los vídeos de HTML5
-        </video> */}
         <iframe
           width="100%"
           height="650px"
@@ -21,6 +29,9 @@ const Video = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
+        <div id="youtubeListContainer">
+          <YoutubeCarousel items={videoList} />
+        </div>
       </div>
     </section>
   );
