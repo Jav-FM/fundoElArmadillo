@@ -12,6 +12,7 @@ const Contacto = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [when, setWhen] = useState("");
   const [message, setMessage] = useState("");
   const [onCharge, setOnCharge] = useState(false);
   const [error, setError] = useState(false);
@@ -22,6 +23,7 @@ const Contacto = () => {
     setName("");
     setEmail("");
     setPhone("");
+    setWhen("");
     setMessage("");
   };
 
@@ -115,7 +117,27 @@ const Contacto = () => {
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </Form.Group>
-
+              <Form.Group className="mb-3">
+                <Form.Label>¿Cuándo tienes pensado comprar? *</Form.Label>
+                <Form.Select
+                  name="user_when"
+                  aria-label="¿Cuándo tienes pensado comprar?"
+                  value={when}
+                  onChange={(e) => setWhen(e.target.value)}
+                >
+                  <option value=""></option>
+                  <option value="Quiero agendar una visita">
+                    Quiero agendar una visita
+                  </option>
+                  <option value="Este mes">Este mes</option>
+                  <option value="En los próximos 3 meses">
+                    En los próximos 3 meses
+                  </option>
+                  <option value="Aún no lo tengo definidos">
+                    Aún no lo tengo definido
+                  </option>
+                </Form.Select>
+              </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Label>Mensaje *</Form.Label>
                 <Form.Control
@@ -139,6 +161,7 @@ const Contacto = () => {
                     name === "" ||
                     email === "" ||
                     phone === "" ||
+                    when === "" ||
                     message === ""
                   }
                 >
