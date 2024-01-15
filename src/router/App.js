@@ -4,6 +4,7 @@ import { CustomNavbar } from "../components/common/CustomNavbar";
 import { CustomFooter } from "../components/common/CustomFooter";
 import { Home } from "../domain/Home";
 import MuchasGracias from "../domain/MuchasGracias";
+import LandingPage from "../domain/LandingPage";
 
 const App = () => {
   return (
@@ -22,7 +23,16 @@ const App = () => {
           }
         />
         <Route path="/gracias" element={<MuchasGracias />} />
+        <Route path="/promo-verano" element={<LandingPage />} />
       </Routes>
+      <a
+        href="https://wa.me/56923856973"
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
     </div>
   );
 };

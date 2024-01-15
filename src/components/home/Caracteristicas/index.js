@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Image } from "react-bootstrap";
 import "./Caracteristicas.scss";
 import { BsFillTreeFill } from "react-icons/bs";
-import mapImage from "../../../assets/img/mapa.JPG";
 import { BrochureLink } from "../../common/BrochureLink";
+import { Map } from "../../common/Map";
 
 const Caracteristicas = () => {
   const features = [
@@ -29,16 +28,7 @@ const Caracteristicas = () => {
       <BrochureLink />
       <div id="contentContainer">
         <div id="mapContainer">
-          <Image id="mapImage" src={mapImage} alt="mapa" />
-          <a
-            href="https://goo.gl/maps/cA9MTQhWFDDGjZj8A"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <Button variant="dark" size="lg">
-              Abrir en Google Maps
-            </Button>
-          </a>
+          <Map />
         </div>
         <div id="caracteristicasContainer">
           {features.map((f, i) => (
