@@ -1,9 +1,10 @@
 import React from "react";
 import "./CustomNavbar.scss";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import logo from "../../../assets/img/logo_blanco.png";
+import { downloadBrochure } from "../../../utils/commonFunctions";
 
 const CustomNavbar = () => {
   return (
@@ -31,7 +32,13 @@ const CustomNavbar = () => {
             <Nav.Link href="#sector">La Patagonia</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>
-
+          <Nav>
+            <div>
+              <Button variant="light" onClick={downloadBrochure}>
+                Descargar Brochure
+              </Button>
+            </div>
+          </Nav>{" "}
           {/* <Nav>
             <Nav.Link as={Link} to="/register">
               <h3>

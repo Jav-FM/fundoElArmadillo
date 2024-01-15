@@ -7,6 +7,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  #contactoTitleConteinar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
   #formContainer {
     width: 48%;
     min-width: 300px;
@@ -48,6 +55,15 @@
     }
     #contentContainer {
       justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  #contacto {
+    #contactoTitleConteinar {
+      justify-content: center;
+      gap: 20px;
     }
   }
 }

@@ -3,31 +3,30 @@ import { Button, Image } from "react-bootstrap";
 import "./Caracteristicas.scss";
 import { BsFillTreeFill } from "react-icons/bs";
 import mapImage from "../../../assets/img/mapa.JPG";
+import { BrochureLink } from "../../common/BrochureLink";
 
 const Caracteristicas = () => {
   const features = [
-    { text: "Listas para escriturar" },
+    { text: "A 20 minutos del aeropuerto de Balmaceda" },
+    { text: "Entrega inmediata" },
     { text: "Parcelas desde 5000 m2" },
     {
-      text: "Acceso a 450m de rivera del río Simpson.",
+      text: "Acceso a 450m de rivera del río Simpson",
     },
     { text: "Acceso en cualquier tipo de vehículo" },
     { text: "Parcelas con orilla de camino y vistas privilegiadas" },
     { text: "Topografía plana y semiplana" },
     { text: "Factibilidad real de Agua y Electricidad (poste)" },
-    { text: "Ubicado a 30 minutos del aeropuerto de Balmaceda. " },
-    { text: "A 25 minutos de la ciudad de Coyhaique. (Sector Valle Simpson) " },
+    { text: "A 15 minutos de más de 6 lagos de la región" },
+    { text: "A 25 minutos de la ciudad de Coyhaique. (Sector Valle Simpson)" },
     { text: "A 60 Minutos de Parque Nacional Cerro Castillo" },
-    { text: " 90 minutos de Puerto Ingeniero Ibañes " },
-    {
-      text: "Zona de Internacional de Pesca: Lago Elizalde, La Paloma, Lago  Caro",
-    },
-    { text: "Carretera Austral" },
+    { text: " 90 minutos de Puerto Ingeniero Ibañes" },
   ];
 
   return (
     <section id="caracteristicas" className="container">
       <h2 id="title">Características y Ubicación</h2>
+      <BrochureLink />
       <div id="contentContainer">
         <div id="mapContainer">
           <Image id="mapImage" src={mapImage} alt="mapa" />

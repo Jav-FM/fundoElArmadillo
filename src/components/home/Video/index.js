@@ -11,10 +11,21 @@ const Video = () => {
   const getPlaylistVideos = async () => {
     const videoListResponse = await axios.get(youtubeChanelLastVideosApi);
     setVideoList(videoListResponse.data.items);
+    // localStorage.setItem(
+    //   "videos",
+    //   JSON.stringify(videoListResponse.data.items)
+    // );
   };
 
   useEffect(() => {
+    // if (videoList.length == 0) {
+    //   const storageVideos = JSON.parse(localStorage.getItem("videos"));
+    //   if (storageVideos && storageVideos.length > 0) {
+    //     setVideoList(storageVideos);
+    //   } else {
     getPlaylistVideos();
+    //   }
+    // }
   }, []);
 
   return (

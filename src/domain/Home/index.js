@@ -8,8 +8,9 @@ import { TourVirtual } from "../../components/home/TourVirtual";
 import { Sector } from "../../components/home/Sector";
 import { Galeria } from "../../components/home/Galeria";
 import { Contacto } from "../../components/home/Contacto";
-import homeVideo from "../../assets/video/header-armadillo.MOV";
+import homeVideo from "../../assets/video/header-armadillo.mp4";
 import videoPoster from "../../assets/img/video-poster-img.jpg";
+import { BrochureLink } from "../../components/common/BrochureLink";
 import { CustomModal } from "../../components/common/CustomModal";
 
 const Home = () => {
@@ -27,7 +28,10 @@ const Home = () => {
           Armadillo
         </h1>
         <h4 id="subtitle">Con acceso a orilla de río Simpson</h4>
-        <h4 id="subsubtitle">20% de descuento para unidades limitadas</h4>
+        <h4 id="subsubtitle">
+          Desde 31.000.000 contado o pie más 36 cuotas de 270.000
+        </h4>
+        <h4 id="subsubtitle">con financiamiento directo.</h4>
         <Button
           className="homeButton"
           variant="outline-light"
@@ -44,6 +48,9 @@ const Home = () => {
         >
           Contáctanos
         </Button>
+        <div id="brochureLinkContainer">
+          <BrochureLink color="white" />
+        </div>
         <div id="homeCardsContainer" className="container">
           <div className="homeCard">
             <h3>Parcelas Agrícolas de 5000 m2</h3>

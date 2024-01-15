@@ -11,8 +11,6 @@
   }
   .linksContainer {
     width: 100%;
-    // display: flex;
-    // justify-content: space-around;
   }
   .nav-link {
     color: #a3a1a1;
@@ -25,5 +23,13 @@
   .navbar-nav .show > .nav-link,
   .navbar-nav .nav-link.active {
     color: #ffffff;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    .linksContainer {
+      align-items: center;
+    }
   }
 }

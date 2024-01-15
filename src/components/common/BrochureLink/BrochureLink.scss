@@ -1,0 +1,31 @@
+#brochureLink {
+  font-weight: 500;
+  font-family: "Public Sans", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    cursor: pointer;
+  }
+}
+.whiteClass {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #202020;
+  &:hover {
+    color: #e7e7e7;
+  }
+  &:active {
+    color: #c4c4c4;
+  }
+}
+.blackClass {
+  color: #000000;
+  &:hover {
+    color: #5e5e5e;
+  }
+  &:active {
+    color: #828282;
+  }
+}
