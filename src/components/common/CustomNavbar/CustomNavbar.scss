@@ -24,6 +24,18 @@
   .navbar-nav .nav-link.active {
     color: #ffffff;
   }
+  #navbarSocials {
+    display: flex;
+    gap: 8px;
+    margin-right: 18px;
+    .socialLink {
+      font-size: 24px;
+      color: #a3a1a1;
+      &:hover {
+        color: #c9c8c8;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -31,5 +43,12 @@
     .linksContainer {
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 991px) {
+  #navbarSocials {
+    margin-right: 0px;
+    margin-bottom: 12px;
   }
 }

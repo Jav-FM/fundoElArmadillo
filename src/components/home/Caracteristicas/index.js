@@ -9,9 +9,6 @@ const Caracteristicas = () => {
     { text: "A 20 minutos del aeropuerto de Balmaceda" },
     { text: "Entrega inmediata" },
     { text: "Parcelas desde 5000 m2" },
-    {
-      text: "Acceso a 450m de rivera del río Simpson",
-    },
     { text: "Acceso en cualquier tipo de vehículo" },
     { text: "Parcelas con orilla de camino y vistas privilegiadas" },
     { text: "Topografía plana y semiplana" },

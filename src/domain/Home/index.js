@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./Home.scss";
 import { Proyecto } from "../../components/home/Proyecto";
@@ -11,7 +11,6 @@ import { Contacto } from "../../components/home/Contacto";
 import homeVideo from "../../assets/video/header-armadillo.mp4";
 import videoPoster from "../../assets/img/video-poster-img.jpg";
 import { BrochureLink } from "../../components/common/BrochureLink";
-import { CustomModal } from "../../components/common/CustomModal";
 
 const Home = () => {
   // const [showModal, setShowModal] = useState(true);
@@ -27,10 +26,8 @@ const Home = () => {
           Fundo {/* </span> */}
           Armadillo
         </h1>
-        <h4 id="subtitle">Con acceso a orilla de río Simpson</h4>
-        <h4 id="subsubtitle">
-          Desde 31.000.000 contado o pie más 36 cuotas de 270.000
-        </h4>
+        <h4 id="subtitle">A minutos del río Simpson</h4>
+        <h4 id="subsubtitle">Desde 25M contado o 30% de pie más 60 cuotas</h4>
         <h4 id="subsubtitle">con financiamiento directo.</h4>
         <Button
           className="homeButton"
@@ -72,11 +69,11 @@ const Home = () => {
             </p>
           </div>
           <div className="homeCard">
-            <h3>Acceso a rivera de Río Simpson</h3>
+            <h3>Cercanía a Río Simpson</h3>
             <p>
-              El proyecto contará con acceso al terreno colindante de 17
-              hectareas, el cual incluye Bosque Nativo y 450 metros de rivera
-              del Río Simpson para actividades al aire libre.
+              El proyecto está a 12 minutos del puente Rio Simpson ubicado sobre
+              la ruta x-674, lugar conocido como estación de pesca por los
+              fanáticos del deporte aventura.
             </p>
           </div>
         </div>
@@ -96,11 +93,11 @@ const Home = () => {
             patagón, a minutos de las principales zonas de pesca y la famosa
             ruta de la carretera austral.
           </p>
-          <h3 className="generalTitle">Acceso a rivera a Río Simpson</h3>
+          <h3 className="generalTitle">Cercanía a Río Simpson</h3>
           <p>
-            El proyecto contará con acceso al terreno colindante de 17
-            hectareas, el cual incluye Bosque Nativo y 450 metros de rivera del
-            Río Simpson para actividades al aire libre.
+            El proyecto está a 12 minutos del puente Rio Simpson ubicado sobre
+            la ruta x-674, lugar conocido como estación de pesca por los
+            fanáticos del deporte aventura.
           </p>
         </div>
       </div>

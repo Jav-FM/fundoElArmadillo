@@ -8,7 +8,7 @@ const Map = () => {
     <>
       <Image id="mapImage" src={mapImage} alt="mapa" />
       <a
-        href="https://goo.gl/maps/cA9MTQhWFDDGjZj8A"
+        href="https://maps.app.goo.gl/d7UC1dnUCpAvaP7N7"
         rel="noreferrer"
         target="_blank"
       >

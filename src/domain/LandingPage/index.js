@@ -18,7 +18,7 @@ const LandingPage = () => {
       <div id="contentContainer">
         <h2>Venta Online - Stock Limitado</h2>
         <h4>
-          Sólo 6 unidades a 20M pagando al contado
+          Sólo 7 unidades a 20M pagando al contado
           <br />
           compra con 50% de descuento sobre tasación
         </h4>
@@ -28,19 +28,19 @@ const LandingPage = () => {
         </h5>
         <img id="landingPoster" src={landingPoster} alt="landing_poster" />
         <a href="#landingcontacto">
-          <Button variant="dark" size="lg">
+          <Button className="mt-2" variant="dark" size="lg">
             Quiero información para comprar
           </Button>
         </a>
         <a id="locationButton" href="#landingubicacion">
-          <Button variant="dark" size="lg">
+          <Button className="mt-2" variant="dark" size="lg">
             Ver ubicación
           </Button>
         </a>
         <h3 className="subtitle">Revisa las unidades seleccionadas</h3>
-        <h4>9 - 17 - 19 - 23 - 43 - 56</h4>
+        <h4>9 - 17 - 32 - 43 - 51 - 52 - 56</h4>
         <a
-          href="https://digitaldesign.cl/360/Galera/tour.html"
+          href="https://digitaldesign.cl/360/Santa_Elena/tour.html"
           rel="noreferrer"
           target="_blank"
         >

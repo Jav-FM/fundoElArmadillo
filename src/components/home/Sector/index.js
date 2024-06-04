@@ -51,11 +51,9 @@ const Sector = () => {
         <div className="textContainer">
           <h4>Zona de Pesca</h4>
           <p>
-            El proyecto cuenta con 450 metros de orilla de río Simpson para
-            pesca. Además, la zona tiene muchos lagos, entre los que destacan
-            lago: la Paloma, Azul, Elizalde y Caro, para pesca con mosca, de
-            orilla o arrastre, y que son visitadas por muchos turistas que
-            viajan de diversas partes del mundo.
+            El proyecto se encuentra a 12 minutos de la zona de pesca del Río
+            Simpson, y a 15 minutos del centro de Sky El Fraile y de los lagos
+            Elizalde, La Paloma y Monreal.
           </p>
         </div>
       </div>

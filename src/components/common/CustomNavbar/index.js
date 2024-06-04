@@ -2,7 +2,7 @@ import React from "react";
 import "./CustomNavbar.scss";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook, AiFillYoutube } from "react-icons/ai";
 import logo from "../../../assets/img/logo_blanco.png";
 import { downloadBrochure } from "../../../utils/commonFunctions";
 
@@ -31,6 +31,37 @@ const CustomNavbar = () => {
             <Nav.Link href="#tourVirtual">Tour Virtual</Nav.Link>
             <Nav.Link href="#sector">La Patagonia</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
+            <Nav.Link
+              target="_blank"
+              href="https://caminopatagon.blogspot.com/"
+            >
+              Blog
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <div id="navbarSocials">
+              <a
+                className="socialLink"
+                target="_blank"
+                href="https://www.instagram.com/fulcrumg_/"
+              >
+                <AiFillInstagram />
+              </a>
+              <a
+                className="socialLink"
+                target="_blank"
+                href="https://web.facebook.com/fulcrumg"
+              >
+                <AiFillFacebook />
+              </a>
+              <a
+                className="socialLink"
+                target="_blank"
+                href="https://www.youtube.com/@fulcrumgparcelascoyhaique"
+              >
+                <AiFillYoutube />
+              </a>
+            </div>
           </Nav>
           <Nav>
             <div>
@@ -38,19 +69,7 @@ const CustomNavbar = () => {
                 Descargar Brochure
               </Button>
             </div>
-          </Nav>{" "}
-          {/* <Nav>
-            <Nav.Link as={Link} to="/register">
-              <h3>
-                <AiFillInstagram />
-              </h3>
-            </Nav.Link>
-            <Nav.Link as={Link} to="/login">
-              <h3>
-                <AiFillFacebook />
-              </h3>
-            </Nav.Link>
-          </Nav> */}
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

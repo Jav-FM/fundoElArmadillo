@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import "./Formulario.scss";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom";
 import { useForm, Controller } from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
+import { FormCaptcha } from "./FormCaptcha";
+import { validateCaptcha, loadCaptchaEnginge } from "react-simple-captcha";
 
 const Formulario = ({ setOnCharge, setError, showWhenField }) => {
   const form = useRef();
@@ -18,41 +20,51 @@ const Formulario = ({ setOnCharge, setError, showWhenField }) => {
   } = useForm();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const cellphoneRegex = /^(\+56)(\s?)(0?9)(\s?)[98765432]\d{7}$/;
+  const [captchaFailed, setCaptchaFailed] = useState(false);
 
   const onSubmit = (e) => {
-    setOnCharge(true);
-    try {
-      emailjs
-        .sendForm(
-          "service_r2k4pev",
-          "template_hrmcmbh",
-          form.current,
-          "HuYmnh6BR78QRlI2p"
-        )
-        .then(
-          (result) => {
-            reset();
-            setOnCharge(false);
-            navigate("/gracias");
-            // setSuccess(true);
-            // setTimeout(() => {
-            //   setSuccess(false);
-            // }, 5000);
-          },
-          (error) => {
-            setOnCharge(false);
-            setError(true);
-            setTimeout(() => {
-              setError(false);
-            }, 5000);
-          }
-        );
-    } catch {
-      setOnCharge(false);
-      setError(true);
-      setTimeout(() => {
-        setError(false);
-      }, 5000);
+    setCaptchaFailed(false);
+    let user_captcha = document.getElementById("user_captcha_input").value;
+    if (validateCaptcha(user_captcha) === true) {
+      setOnCharge(true);
+      try {
+        emailjs
+          .sendForm(
+            "service_r2k4pev",
+            "template_hrmcmbh",
+            form.current,
+            "HuYmnh6BR78QRlI2p"
+          )
+          .then(
+            (result) => {
+              reset();
+              loadCaptchaEnginge(6, "lightGrey");
+              document.getElementById("user_captcha_input").value = "";
+              setOnCharge(false);
+              navigate("/gracias");
+              // setSuccess(true);
+              // setTimeout(() => {
+              //   setSuccess(false);
+              // }, 5000);
+            },
+            (error) => {
+              setOnCharge(false);
+              setError(true);
+              setTimeout(() => {
+                setError(false);
+              }, 5000);
+            }
+          );
+      } catch {
+        setOnCharge(false);
+        setError(true);
+        setTimeout(() => {
+          setError(false);
+        }, 5000);
+      }
+    } else {
+      setCaptchaFailed(true);
+      document.getElementById("user_captcha_input").value = "";
     }
   };
 
@@ -202,6 +214,10 @@ const Formulario = ({ setOnCharge, setError, showWhenField }) => {
         />
       </Form.Group>
       <div id="buttonContainer">
+        <FormCaptcha />
+        {captchaFailed && (
+          <p style={{ color: "red" }}>El Captcha no coincide</p>
+        )}
         <Button size="lg" variant="dark" type="submit" id="formButton">
           Enviar
         </Button>

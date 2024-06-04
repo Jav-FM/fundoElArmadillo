@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { TiLocation } from "react-icons/ti";
 import "./CustomFooter.scss";
 
 const CustomFooter = () => {
@@ -8,10 +9,20 @@ const CustomFooter = () => {
       <Container fluid>
         <Nav
           id="footer-content"
-          className="d-flex flex-column align-items-center justify-content-center"
+          className="d-flex align-items-center justify-content-evenly"
         >
           <Nav.Item className="footer-item">
-            Fundo Armadillo © 2022 Todos los derechos reservados
+            <h3>
+              <TiLocation />
+            </h3>
+            <h3 className="locationTitle">UBICACIÓN</h3>
+            <p>
+              Augusto Leguia Norte 65 <br /> Oficina 4 - Las Condes
+            </p>
+          </Nav.Item>
+          <Nav.Item className="footer-item">
+            Fundo Armadillo © 2024 <br />
+            Todos los derechos reservados
           </Nav.Item>
         </Nav>
       </Container>

@@ -1,5 +1,5 @@
 import "../App.scss";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { CustomNavbar } from "../components/common/CustomNavbar";
 import { CustomFooter } from "../components/common/CustomFooter";
 import { Home } from "../domain/Home";
@@ -23,7 +23,11 @@ const App = () => {
           }
         />
         <Route path="/gracias" element={<MuchasGracias />} />
-        <Route path="/promo-verano" element={<LandingPage />} />
+        <Route path="/promo-invierno" element={<LandingPage />} />
+        <Route
+          path="/promo-verano"
+          element={<Navigate to="/promo-invierno" />}
+        />
       </Routes>
       <a
         href="https://wa.me/56923856973"

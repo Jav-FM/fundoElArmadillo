@@ -1,9 +1,13 @@
 #footer {
   z-index: 3;
+  text-align: center;
   #footer-content {
     width: 100%;
   }
   .footer-item {
     color: #ffffff;
+  }
+  .locationTitle {
+    font-size: 20px;
   }
 }
